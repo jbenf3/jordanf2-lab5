@@ -11,26 +11,26 @@ def wavepacket(x, k, sigma):
 
 
 def main():
-        """This function sould call noisy_packet() to get a Gaussian wave
-        packet, call clean_data() to apply a low pass filter to the data and
-        finally plot the result."""
-        #TODO add your code here
+    """This function sould call noisy_packet() to get a Gaussian wave
+    packet, call clean_data() to apply a low pass filter to the data and
+    finally plot the result."""
+    #TODO add your code here
 
 
 def noisy_packet(x_values, k, sigma, noise_amplitude):
-        """This function returns a noisy Gaussian wavepacket with wave
-        vector k, standard deviation sigma and Gaussian noise of standard
-        deviation noise_amplitude."""
-        clean_y = wavepacket(x_values,k,sigma)
-        noisy_y = clean_y + noise_amplitude*np.random.randn(len(x_values))
-	return noisy_y
+    """This function returns a noisy Gaussian wavepacket with wave
+    vector k, standard deviation sigma and Gaussian noise of standard
+    deviation noise_amplitude."""
+    clean_y = wavepacket(x_values,k,sigma)
+    noisy_y = clean_y + noise_amplitude*np.random.randn(len(x_values))
+    return noisy_y
 
 def clean_data(x_values,y_values):
-        """This function should take a set of y_values, perform the Fourier
-        transform on it, filter out the high frequency noise, transform the
-        signal back into real space, and return it."""
+    """This function should take a set of y_values, perform the Fourier
+    transform on it, filter out the high frequency noise, transform the
+    signal back into real space, and return it."""
 
-        pass #TODO add your code here
-	#return y_clean
+    pass #TODO add your code here
+    #return y_clean
 
 main()  # calls your main function
