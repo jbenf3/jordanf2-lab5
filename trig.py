@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 # TODO fill in this function
-def integrate(y,dx):
+def integrate(y, dx):
     pass
 
 # TODO write code here to setup arrays x and y = sin(x) and then plot them.
